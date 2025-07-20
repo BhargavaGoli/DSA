@@ -1,10 +1,9 @@
-nums = [9,0,8,6]
+#bubblesort
+nums = [9,0,8,42]
 
-length = len(nums)
-
-for i in range(length) :
-    for j in range(length - i - 1) :
+for i in range(len(nums) - 1) :
+    for j in range(len(nums) - i - 1) :
         if nums[j] > nums[j + 1] :
-            nums[j],nums[j + 1] = nums[j + 1], nums[j]
+            nums[j], nums[j + 1] = nums[j + 1], nums[j]
 
 print(nums)
